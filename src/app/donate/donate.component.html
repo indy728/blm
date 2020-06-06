@@ -1,0 +1,69 @@
+<div class="donate container">
+    <section class="donate__section">
+        <div class="row section-header">
+            <h1>Bay Area Relief Funds</h1>
+        </div>
+        <hr/>
+        <div class="donate__links">
+            <embed height="290" src="https://www.gofundme.com/f/rebuilding-oakland-black-businesses/widget/medium" type="text/html">
+            <embed height="290" src="https://www.gofundme.com/f/oakland-black-business-damage-fund/widget/medium" type="text/html">
+            <embed height="290" src="https://www.gofundme.com/f/help-oakland-small-biz-get-cleaned-up/widget/medium" type="text/html">
+        </div>
+    </section>
+    <section class="donate__section">
+        <div class="row section-header">
+            <h1>Bay Area Support Funds</h1>
+        </div>
+        <hr/>
+        <div class="donate__links">
+            <app-card *ngFor="let fund of funds.BASF" [fund]='fund'></app-card>
+        </div>
+    </section>
+    <section class="donate__section">
+        <div class="row section-header">
+            <h1>Bay Area Bail Funds</h1>
+        </div>
+        <hr/>
+        <div class="donate__links">
+            <app-card *ngFor="let fund of funds.BABF" [fund]='fund'></app-card>
+
+        </div>
+    </section>
+    <section class="donate__section">
+        <div class="row section-header">
+            <h1>Memorial Funds</h1>
+        </div>
+        <hr/>
+        <div class="donate__links">
+            <embed height="290" src="https://www.gofundme.com/f/georgefloyd/widget/medium" type="text/html">
+            <embed height="290" src="https://www.gofundme.com/f/i-run-with-maud/widget/medium" type="text/html">
+        </div>
+    </section>
+    <section class="donate__section">
+        <div class="row section-header">
+            <h1>National Relief Funds</h1>
+        </div>
+        <hr/>
+        <div class="donate__links">
+            <app-card *ngFor="let fund of funds.NRF" [fund]='fund'></app-card>
+        </div>
+    </section>
+    <section class="donate__section">
+        <div class="row section-header">
+            <h1>National Support Funds</h1>
+        </div>
+        <hr/>
+        <div class="donate__links">
+            <app-card *ngFor="let fund of funds.NSF" [fund]='fund'></app-card>
+        </div>
+    </section>
+    <section class="donate__section">
+        <div class="row section-header">
+            <h1>National Bail Funds</h1>
+        </div>
+        <hr/>
+        <div class="donate__links">
+            <app-card *ngFor="let fund of funds.NBF" [fund]='fund'></app-card>
+        </div>
+    </section>
+</div>

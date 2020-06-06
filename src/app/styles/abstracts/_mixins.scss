@@ -1,0 +1,31 @@
+@mixin centerElement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+	margin:0px auto;
+	padding: $pad-up-dn $pad-left-right;
+}
+
+
+// These bps are bootstrap standards
+@mixin respond($breakpoint) {
+    @if $breakpoint == xs {
+        @media only screen and (max-width: 575px) { @content };   
+    }
+    @if $breakpoint == sm {
+        @media only screen and (min-width: 576px) { @content };    
+    }
+    @if $breakpoint == md {
+        @media only screen and (min-width: 768px) { @content };     
+    }
+    @if $breakpoint == lg {
+        @media only screen and (min-width: 992px) { @content };    
+    }
+    @if $breakpoint == xl {
+        @media only screen and (min-width: 1200px) { @content };   
+    }
+}

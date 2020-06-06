@@ -1,0 +1,35 @@
+@import '../styles/main';
+
+.nav-toolbar {
+    background-color: $color-slate-dark;
+}
+
+.mat-toolbar.nav-toolbar.mat-toolbar-single-row {
+    .old-header{
+        @include zero-margin(2rem, 5rem);
+    }
+    height: inherit;
+}
+
+.black-lives-matter {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+
+    .old-header {
+        display: none;
+    }
+
+    .blm-logo {
+        width: 5.04rem;
+        height: 7.16rem;
+        background-color: white;
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+}

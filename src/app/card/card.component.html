@@ -1,0 +1,9 @@
+<div class="donate-card">
+    <h2>{{fund.name}}</h2>
+    <p>{{fund.description}}</p>
+    <div class="donate-card__buttons">
+        <hr>
+        <a *ngIf="fund.websiteURL !== ''" href={{fund.websiteURL}} class="donate-card__buttons--website">Website</a>
+        <a href={{fund.donateURL}} class="donate-card__buttons--donate">Donate now</a>
+    </div>
+</div>

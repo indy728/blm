@@ -1,0 +1,41 @@
+@import '../../styles/main';
+
+header {
+    @include zero-margin(7rem, 3rem);
+    margin:0px auto;
+}
+
+.jumbotron {
+    background: $color-slate-medium ;
+    color:floralwhite;
+    
+    .container {
+        img {
+            max-height: 12rem;
+        }
+    }
+
+    .blm-logo {
+        display: none;
+    }
+}
+
+.black-lives-matter {
+    background-color: black;
+
+    .header-text {
+        display: none;
+    }
+
+    .blm-logo {
+        width: 100%;
+        display: flex;
+
+        justify-content: center;
+        // background-image: url('../../../assets/img/Black_Lives_Matter_logo.svg');
+        img {
+            margin: 0 auto;
+            height: 20rem;
+        }
+    }
+}

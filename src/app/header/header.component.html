@@ -1,0 +1,14 @@
+<mat-toolbar class="nav-toolbar" [ngClass]="{'black-lives-matter': blm}">
+    <div class="old-header">
+        <a class="navbar-brand" routerLink="/home">
+            <img src="../assets/img/chodie.gif" height="50" width="41">
+        </a>
+        <a mat-button routerLink="/home" routerLinkActive="active" class="nav-toolbar__button">Home</a>
+        <a mat-button routerLink="/resume" routerLinkActive="active" class="nav-toolbar__button">Résumé</a>
+        <span class="flex-spacer"></span>
+        <a mat-button class="login-button" class="nav-toolbar__button">Log In</a>
+    </div>
+    <figure class="blm-logo">
+        <img src='assets/img/Black_Lives_Matter.png' alt='Justice Fist' />
+    </figure>
+</mat-toolbar>
